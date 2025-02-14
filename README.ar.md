@@ -226,4 +226,7 @@ export async function GET() {
 - [صيور الشارة](https://www.freecodecamp.org/news/what-is-open-graph-and-how-can-i-use-it-for-my-website/) المولدة للمنشورات بلغات ذات اتجاه من يمين لليسار ستكون مكسورة بسبب فصور من مكتبة [ساتورى](https://www.npmjs.com/package/satori) المستخدمة فى توليد الصور
   - نرحب بالمساهمات!
 
+- [صيور الشارة](https://www.freecodecamp.org/news/what-is-open-graph-and-how-can-i-use-it-for-my-website/) المولدة للمنشورات بلغلت ذات اتجاه من يمين لليسار سبكون مكسورة بسبب مكتبة [ساتورىٍٍ](https://www.npmjs.com/package/satori) المستخدمة فى توليد الصور
+  - نرحب بالمساهمات!
+
 </div>
