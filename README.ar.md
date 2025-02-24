@@ -195,6 +195,16 @@ export const localeToProfile = {
 
 غير ذلك فكل الملفات يجب أن توجد فى كل مجلد ترجمة
 
+## 🧞 الأوامر
+
+نفس [الأوامر كما فى الثيمة الأصلية](https://github.com/satnaing/astro-paper/tree/main?tab=readme-ov-file#-commands) بالإضافة إلى
+
+| الأمر              | دلالتة                                                                                      |
+| :------------------- | :------------------------------------------------------------------------------------------ |
+| `npm test`           | يجرى جميع الاختبارات مرة واحدة فقط ثم يخرج [تعلم إكثر](https://vitest.dev/guide/cli.html#vitest-run) |
+| `npm run test:watch` | تجرى الإختبارات فى وضع المراقبة [تعلم إكثر](https://vitest.dev/guide/cli.html#vitest-watch)   |
+| `npm run coverage`   | توليد تقرير تغطية الإختبارات [تعلم إكثر](https://vitest.dev/guide/coverage.html)  |
+
 ## 🚧 المشاكل المعروفة
 
 - تنسيق الصفحات في وضع قارئ الشاشة مكسور ويحتاج إلى إصلاح.

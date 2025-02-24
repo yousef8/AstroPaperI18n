@@ -196,6 +196,16 @@ Only one `404.astro` and `robots.txt.ts` is needed for the entire site. Place th
 
 Other than that all files should exist in each local folder
 
+## 🧞 Commands
+
+Same [commands as in original theme](https://github.com/satnaing/astro-paper/tree/main?tab=readme-ov-file#-commands) with addition to
+
+| Command              | Action                                                                                      |
+| :------------------- | :------------------------------------------------------------------------------------------ |
+| `npm test`           | Run all unit tests once and exit [learn more](https://vitest.dev/guide/cli.html#vitest-run) |
+| `npm run test:watch` | Run unit tests in watch mode [learn more](https://vitest.dev/guide/cli.html#vitest-watch)   |
+| `npm run coverage`   | Generate unit testing coverage report [learn more](https://vitest.dev/guide/coverage.html)  |
+
 ## 🚧 Known Issues
 
 - [ ] Styling in screen reader mode is currently broken and requires fixes.
