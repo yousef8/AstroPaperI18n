@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.0](https://github.com/yousef8/AstroPaperI18n/compare/v0.2.0...v0.3.0) (2025-02-27)
+
+### Sync With Upstream
+
+* use tag name for display in tags page ([#438](https://github.com/yousef8/AstroPaperI18n/issues/438)) ([#16](https://github.com/yousef8/AstroPaperI18n/issues/16)) ([b104d43](https://github.com/yousef8/AstroPaperI18n/commit/b104d43d1078e8feeaa4decbc0bab311b117efc6))
+
+With this commit we have completely synced with AstroPaper release 4.8.0
+
+### Features
+
+* add i18n support for RSS ([#18](https://github.com/yousef8/AstroPaperI18n/issues/18)) ([c0fa8ad](https://github.com/yousef8/AstroPaperI18n/commit/c0fa8adddd9a60a17c5bf17963c410ba0e42d129))
+* use base config in developement mode ([b9956cb](https://github.com/yousef8/AstroPaperI18n/commit/b9956cb46c50fe6a57a36c06c662c97c16084fb2))
+
+
+### Bug Fixes
+
+* leave trailing slash for root path `/` resulting from getRelativeLocalePath ([dbac205](https://github.com/yousef8/AstroPaperI18n/commit/dbac2057d3d58736c257068ef78a10d480adf09b))
+
 ## [0.2.0](https://github.com/yousef8/AstroPaperI18n/compare/v0.1.0...v0.2.0) (2025-02-14)
 
 
