@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.0](https://github.com/yousef8/AstroPaperI18n/compare/v0.3.0...v0.4.0) (2025-03-02)
+
+
+### Features
+
+* restructure pages folder for dynamic locale-based path generation ([#19](https://github.com/yousef8/AstroPaperI18n/issues/19)) ([ae7e24b](https://github.com/yousef8/AstroPaperI18n/commit/ae7e24ba70e3f10e77c0af92bcff12fd66d8da03))
+
 ## [0.3.0](https://github.com/yousef8/AstroPaperI18n/compare/v0.2.0...v0.3.0) (2025-02-27)
 
 ### Sync With Upstream
