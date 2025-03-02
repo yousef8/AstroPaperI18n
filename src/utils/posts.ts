@@ -23,6 +23,17 @@ export const getPostsStaticPathsGroupedByLocale = async ({
     { defaultLocale }
   );
 
+export const getPostsByLocale = async (
+  locale: SupportedLocales[number],
+  { draft = true }: { draft?: boolean } = {}
+) => {
+  const postsByLocale = await getPostsGroupedByLocale({
+    draft,
+    allowedLocales: [locale],
+  });
+  return postsByLocale[locale] || [];
+};
+
 export const getPostsGroupedByLocale = async ({
   draft,
   allowedLocales,
