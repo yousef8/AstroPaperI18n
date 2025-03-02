@@ -6,23 +6,6 @@ type GetPostsOptions = {
   allowedLocales?: SupportedLocales;
 };
 
-type CreateStaticPathsByLocaleOptions = {
-  defaultLocale?: string;
-};
-
-type GetPostsStaticPathsGroupedByLocaleOptions = GetPostsOptions &
-  CreateStaticPathsByLocaleOptions;
-
-export const getPostsStaticPathsGroupedByLocale = async ({
-  draft,
-  allowedLocales,
-  defaultLocale,
-}: GetPostsStaticPathsGroupedByLocaleOptions = {}) =>
-  createStaticPathsByLocale(
-    await getPostsGroupedByLocale({ draft, allowedLocales }),
-    { defaultLocale }
-  );
-
 export const getPostsByLocale = async (
   locale: SupportedLocales[number],
   { draft = true }: { draft?: boolean } = {}
@@ -108,16 +91,3 @@ export const groupPostsByLocale = (
 
   return { ...result, ...filteredPostsByLocale };
 };
-
-export const createStaticPathsByLocale = (
-  localeToPosts: Record<string, CollectionEntry<"blog">[]>,
-  { defaultLocale }: CreateStaticPathsByLocaleOptions = {}
-) =>
-  Object.entries(localeToPosts).map(([locale, posts]) => ({
-    params: {
-      locale: locale === defaultLocale ? undefined : locale,
-    },
-    props: {
-      posts,
-    },
-  }));
