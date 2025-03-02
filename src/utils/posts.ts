@@ -6,6 +6,17 @@ type GetPostsOptions = {
   allowedLocales?: SupportedLocales;
 };
 
+type groupPostsByLocaleOptions = {
+  allowedLocales?: SupportedLocales;
+};
+
+/**
+ * Retrieves blog posts for a specific locale.
+ *
+ * @param locale - The locale to retrieve posts for.
+ * @param options - Options for retrieving posts.
+ * @returns Array of blog posts for the specified locale.
+ */
 export const getPostsByLocale = async (
   locale: SupportedLocales[number],
   { draft = true }: { draft?: boolean } = {}
@@ -17,6 +28,12 @@ export const getPostsByLocale = async (
   return postsByLocale[locale] || [];
 };
 
+/**
+ * Retrieves blog posts grouped by locale.
+ *
+ * @param options - Options for retrieving and grouping posts.
+ * @returns Object with locales as keys and arrays of blog posts as values.
+ */
 export const getPostsGroupedByLocale = async ({
   draft,
   allowedLocales,
@@ -25,6 +42,12 @@ export const getPostsGroupedByLocale = async ({
     allowedLocales,
   });
 
+/**
+ * Retrieves all blog posts with optional filtering.
+ *
+ * @param options - Options for retrieving posts.
+ * @returns Array of blog posts.
+ */
 export const getPosts = async ({
   draft = true,
   allowedLocales = [],
@@ -54,10 +77,14 @@ export const getPosts = async ({
   });
 };
 
-type groupPostsByLocaleOptions = {
-  allowedLocales?: SupportedLocales;
-};
-
+/**
+ * Groups an array of blog posts by their locale.
+ *
+ * @param posts - Array of blog posts to group.
+ * @param options - Options for grouping posts.
+ * @param [options.allowedLocales=[]] - Array of locales to filter posts by.
+ * @returns - Object with locales as keys and arrays of blog posts as values.
+ */
 export const groupPostsByLocale = (
   posts: CollectionEntry<"blog">[],
   { allowedLocales = [] }: groupPostsByLocaleOptions = {}
